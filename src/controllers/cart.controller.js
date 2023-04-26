@@ -82,7 +82,6 @@ const updateProductInCart = catchAsync(async (req, res) => {
   return res.status(httpStatus.OK).send(cart);
 });
 
-
 /**
  * Checkout user's cart
  */

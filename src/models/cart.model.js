@@ -20,6 +20,9 @@ const cartSchema = mongoose.Schema(
       type: String,
       default: config.default_payment_option,
     },
+  },
+  {
+    timestamps: false,
   }
 );
 

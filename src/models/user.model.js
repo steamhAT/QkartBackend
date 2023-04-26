@@ -67,7 +67,6 @@ userSchema.statics.isEmailTaken = async function (email) {
   return !!user;
 };
 
-
 /**
  * Check if entered password matches the user's password
  * @param {string} password
@@ -77,6 +76,7 @@ userSchema.methods.isPasswordMatch = async function (password) {
   const user = this;
   return bcrypt.compare(password, user.password);
 };
+
 
 /**
  * Check if user have set an address other than the default address
